@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Script: 8-for_ls
+# Description: This script displays the content of the current directory in a list format,
+# Using a for loop to iterate through non-hidden files in the current directory
+
+for file in *; do
+    # Check if the file is a regular file and not hidden
+    if [ -f "$file" ] && [[ ! "$file" =~ ^\. ]]; then
+       
+	 echo "$file" | cut -d '-' -f2  
+    fi
+done
