@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Script: 1-for_best_school
+# Description: This script displays the text "Best School" 10 times using a for loop.
+
+# Using a for loop to repeat the display 10 times
+for ((i = 1; i <= 10; i++)); do
+    echo "Best School"
+done
