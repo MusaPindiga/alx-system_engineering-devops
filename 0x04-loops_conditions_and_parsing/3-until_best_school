@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Script: until_best_school.sh
+# Description: This script displays the text "Best School" 10 times using an until loop.
+
+# Initialize counter
+counter=0
+
+# Using an until loop to repeat the display 10 times
+until [ $counter -ge 10 ]; do
+    echo "Best School"
+    
+    # Increment the counter
+    ((counter++))
+done
