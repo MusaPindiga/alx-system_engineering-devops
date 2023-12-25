@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Script: 7-clock
+# Description: This script displays the time in the format of hours from 0 to 12 and minutes from 1 to 59.
+
+# Initialize hours and minutes
+hours=0
+minutes=1
+
+# Using a while loop to iterate through hours and minutes
+while [ $hours -le 12 ]; do
+    # Display the current time
+    echo "Hour: $hours"
+    
+    while [ $minutes -le 59 ]; do
+            echo "$minutes"
+        ((minutes++))
+    done
+    
+    minutes=0
+    ((hours++))
+    
+done
