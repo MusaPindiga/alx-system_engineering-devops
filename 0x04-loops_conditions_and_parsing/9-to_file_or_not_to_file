@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Script: 9-to_file_or_not_to_file
+# Description: This script provides information about the school file.
+
+file_path="school"  # Change this to the actual path of your school file
+
+if [ -e "$file_path" ]; then
+    echo "school file exists"
+
+    if [ -s "$file_path" ]; then
+        echo "school file is not empty"
+
+    else
+        echo "school file is empty"
+    fi
+    
+    if [ -f "$file_path" ]; then
+	    echo "school is a regular file"
+    fi
+else
+    echo "school file does not exist"
+fi
